@@ -1,98 +1,36 @@
-import os
-
-banner_svg_content = """<svg xmlns="http://www.w3.org/2000/svg" width="800" height="260">
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="260">
   <style>
     .name { font: bold 46px 'Segoe UI', Arial, sans-serif; fill: #008080; text-anchor: middle; }
     .subtitle { font: bold 14px 'Segoe UI', Arial, sans-serif; fill: #ffffff; text-anchor: middle; letter-spacing: 2px; }
     .quote { font: bold 16px 'Segoe UI', Arial, sans-serif; fill: #008080; text-anchor: middle; }
+    
+    /* Animação de digitação segura para o GitHub (CSS Puro) */
+    .cover {
+      fill: #0a0a0a;
+      animation: typing 6s steps(60, end) infinite;
+    }
+    
+    @keyframes typing {
+      0%, 15% { transform: translateX(0); }
+      45%, 75% { transform: translateX(720px); }
+      85%, 100% { transform: translateX(0); }
+    }
   </style>
+  
   <rect width="100%" height="100%" fill="#0a0a0a" />
+  
   <rect x="40" y="40" width="720" height="2" fill="#008080" />
   <rect x="40" y="170" width="720" height="2" fill="#008080" />
 
   <text x="400" y="105" class="name">Ciro Henrique Oliveira</text>
 
-  <!-- Typing Animation -->
-  <g>
-    <mask id="type-mask">
-      <rect x="0" y="125" width="800" height="30" fill="white">
-        <animate attributeName="width" values="0;800;800;0;0" keyTimes="0; 0.4; 0.8; 0.9; 1" dur="7s" repeatCount="indefinite" />
-      </rect>
-    </mask>
-    <text x="400" y="145" class="subtitle" mask="url(#type-mask)">DESENVOLVEDOR FULLSTACK | ENGENHEIRO DE SOFTWARE EM FORMAÇÃO</text>
-  </g>
+  <!-- Subtítulo -->
+  <text x="400" y="145" class="subtitle">DESENVOLVEDOR FULLSTACK | ENGENHEIRO DE SOFTWARE EM FORMAÇÃO</text>
+  
+  <!-- Retângulo simulando a digitação cobrindo e revelando o texto -->
+  <rect x="90" y="125" width="720" height="30" class="cover" />
 
   <text x="400" y="215" class="quote">Transformando ideias em soluções tecnológicas</text>
-</svg>"""
+</svg>
 
-markdown_content = """<p align="center">
-  <img src="banner.svg" alt="Banner Ciro Henrique" width="100%">
-</p>
-
-<p align="center">
-  <a href="https://www.linkedin.com/in/ciro-henrique" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-008080?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
-  <a href="mailto:cirohopa@gmail.com"><img src="https://img.shields.io/badge/-Email-008080?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
-  <a href="https://wa.me/5562997008557" target="_blank"><img src="https://img.shields.io/badge/-WhatsApp-008080?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp"></a>
-  <a href="https://instagram.com/ciro_hopa" target="_blank"><img src="https://img.shields.io/badge/-Instagram-008080?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"></a>
-</p>
-
----
-
-### <img src="https://api.iconify.design/lucide:user.svg?color=%23008080" width="22" align="center"> Sobre mim
-
-* <img src="https://api.iconify.design/lucide:graduation-cap.svg?color=%23008080" width="18" align="center"> Graduando em **Engenharia de Software** no Centro Universitário de Goiás (2023 - 2026) .
-* <img src="https://api.iconify.design/lucide:code-xml.svg?color=%23008080" width="18" align="center"> Atuo como **Desenvolvedor Fullstack**, com foco na construção de APIs REST robustas e integrações de sistemas [cite: 1].
-* <img src="https://api.iconify.design/lucide:settings.svg?color=%23008080" width="18" align="center"> Valorizo **Código Limpo, Princípios SOLID, POO** e a arquitetura de **Microsserviços** [cite: 1].
-* <img src="https://api.iconify.design/lucide:bot.svg?color=%23008080" width="18" align="center"> Explorando o universo da Inteligência Artificial aplicada, incluindo ferramentas como Spring AI e LangChain.
-* <img src="https://api.iconify.design/lucide:terminal.svg?color=%23008080" width="18" align="center"> Entusiasta de ambientes Linux (Ubuntu) e automação de processos utilizando n8n e scripts em Python/JavaScript [cite: 1].
-* <img src="https://api.iconify.design/lucide:leaf.svg?color=%23008080" width="18" align="center"> Atualmente aprofundando conhecimentos no ecossistema **Java (Spring Boot)** e práticas DevOps/Cloud na Azure [cite: 1].
-
----
-
-### 🛠️ Tecnologias e Ferramentas
-
-**Back-end & Banco de Dados**
-<br>
-<img src="https://img.shields.io/badge/Java-008080?style=for-the-badge&logo=openjdk&logoColor=white" />
-<img src="https://img.shields.io/badge/Spring_Boot-008080?style=for-the-badge&logo=spring&logoColor=white" />
-<img src="https://img.shields.io/badge/Python-008080?style=for-the-badge&logo=python&logoColor=white" />
-<img src="https://img.shields.io/badge/Node.js-008080?style=for-the-badge&logo=nodedotjs&logoColor=white" />
-<img src="https://img.shields.io/badge/PostgreSQL-008080?style=for-the-badge&logo=postgresql&logoColor=white" />
-
-**Front-end & Mobile**
-<br>
-<img src="https://img.shields.io/badge/TypeScript-008080?style=for-the-badge&logo=typescript&logoColor=white" />
-<img src="https://img.shields.io/badge/JavaScript-008080?style=for-the-badge&logo=javascript&logoColor=white" />
-<img src="https://img.shields.io/badge/Flutter-008080?style=for-the-badge&logo=flutter&logoColor=white" />
-<img src="https://img.shields.io/badge/Dart-008080?style=for-the-badge&logo=dart&logoColor=white" />
-<img src="https://img.shields.io/badge/HTML5-008080?style=for-the-badge&logo=html5&logoColor=white" />
-<img src="https://img.shields.io/badge/CSS3-008080?style=for-the-badge&logo=css3&logoColor=white" />
-
-**DevOps, Automação & Cloud**
-<br>
-<img src="https://img.shields.io/badge/n8n-008080?style=for-the-badge&logo=n8n&logoColor=white" />
-<img src="https://img.shields.io/badge/Docker-008080?style=for-the-badge&logo=docker&logoColor=white" />
-<img src="https://img.shields.io/badge/Azure-008080?style=for-the-badge&logo=microsoftazure&logoColor=white" />
-<img src="https://img.shields.io/badge/Git-008080?style=for-the-badge&logo=git&logoColor=white" />
-<img src="https://img.shields.io/badge/Ubuntu-008080?style=for-the-badge&logo=ubuntu&logoColor=white" />
-
----
-
-### 📊 Estatísticas do GitHub
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=cirohopa&show_icons=true&theme=default&hide_border=true&title_color=008080&icon_color=008080&text_color=333333&bg_color=ffffff" alt="Estatísticas do Ciro" width="48%" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=cirohopa&theme=default&hide_border=true&title_color=008080&icon_color=008080&text_color=333333&background=ffffff" alt="Streak do Ciro" width="48%" />
-</p>
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=cirohopa&layout=compact&theme=default&hide_border=true&title_color=008080&text_color=333333" alt="Linguagens mais usadas" />
-</p>
-"""
-
-with open('/mnt/data/banner.svg', 'w', encoding='utf-8') as f:
-    f.write(banner_svg_content)
-
-with open('/mnt/data/README-github-profile-v2.md', 'w', encoding='utf-8') as f:
-    f.write(markdown_content)
-
-print("Arquivos banner.svg e README-github-profile-v2.md criados com sucesso.")
