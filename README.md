@@ -48,15 +48,3 @@
 <img src="https://img.shields.io/badge/Azure-008080?style=for-the-badge&logo=microsoftazure&logoColor=white" />
 <img src="https://img.shields.io/badge/Git-008080?style=for-the-badge&logo=git&logoColor=white" />
 <img src="https://img.shields.io/badge/Ubuntu-008080?style=for-the-badge&logo=ubuntu&logoColor=white" />
-
----
-
-### 📊 Estatísticas do GitHub
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=cirohopa&show_icons=true&theme=default&hide_border=true&title_color=008080&icon_color=008080&text_color=333333&bg_color=ffffff" alt="Estatísticas do Ciro" width="48%" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=cirohopa&theme=default&hide_border=true&title_color=008080&icon_color=008080&text_color=333333&background=ffffff" alt="Streak do Ciro" width="48%" />
-</p>
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=cirohopa&layout=compact&theme=default&hide_border=true&title_color=008080&text_color=333333" alt="Linguagens mais usadas" />
-</p>
