@@ -13,12 +13,12 @@
 
 ### <img src="https://api.iconify.design/lucide:user.svg?color=%23008080" width="22" align="center"> Sobre mim
 
-* <img src="https://api.iconify.design/lucide:graduation-cap.svg?color=%23008080" width="18" align="center"> Graduando em **Engenharia de Software** no Centro Universitário de Goiás (2023 - 2026) [cite: 1].
-* <img src="https://api.iconify.design/lucide:code-xml.svg?color=%23008080" width="18" align="center"> Atuo como **Desenvolvedor Fullstack**, com foco na construção de APIs REST robustas e integrações de sistemas [cite: 1].
-* <img src="https://api.iconify.design/lucide:settings.svg?color=%23008080" width="18" align="center"> Valorizo **Código Limpo, Princípios SOLID, POO** e a arquitetura de **Microsserviços** [cite: 1].
+* <img src="https://api.iconify.design/lucide:graduation-cap.svg?color=%23008080" width="18" align="center"> Graduando em **Engenharia de Software** no Centro Universitário de Goiás (2023 - 2026).
+* <img src="https://api.iconify.design/lucide:code-xml.svg?color=%23008080" width="18" align="center"> Atuo como **Desenvolvedor Fullstack**, com foco na construção de APIs REST robustas e integrações de sistemas.
+* <img src="https://api.iconify.design/lucide:settings.svg?color=%23008080" width="18" align="center"> Valorizo **Código Limpo, Princípios SOLID, POO** e a arquitetura de **Microsserviços**.
 * <img src="https://api.iconify.design/lucide:bot.svg?color=%23008080" width="18" align="center"> Explorando o universo da Inteligência Artificial aplicada, incluindo ferramentas como Spring AI e LangChain.
-* <img src="https://api.iconify.design/lucide:terminal.svg?color=%23008080" width="18" align="center"> Entusiasta de ambientes Linux (Ubuntu) e automação de processos utilizando n8n e scripts em Python/JavaScript [cite: 1].
-* <img src="https://api.iconify.design/lucide:leaf.svg?color=%23008080" width="18" align="center"> Atualmente aprofundando conhecimentos no ecossistema **Java (Spring Boot)** e práticas DevOps/Cloud na Azure [cite: 1].
+* <img src="https://api.iconify.design/lucide:terminal.svg?color=%23008080" width="18" align="center"> Entusiasta de ambientes Linux (Ubuntu) e automação de processos utilizando n8n e scripts em Python/JavaScript.
+* <img src="https://api.iconify.design/lucide:leaf.svg?color=%23008080" width="18" align="center"> Atualmente aprofundando conhecimentos no ecossistema **Java (Spring Boot)** e práticas DevOps/Cloud na Azure.
 
 ---
 
