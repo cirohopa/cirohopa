@@ -13,7 +13,7 @@
 <!-- cor antiga teal #23008080 -->
 ### <img src="https://api.iconify.design/lucide:user.svg?color=%#1dd9b8" width="22" align="center"> Sobre mim
 
-* <img src="https://api.iconify.design/lucide:graduation-cap.svg?color=%#1dd9b8" width="18" align="center"> Graduando em **Engenharia de Software** no Centro Universitário de Goiás (2023 - 2026).
+* <img src="https://api.iconify.design/lucide:graduation-cap.svg?color=%#8c52ff" width="18" align="center"> Graduando em **Engenharia de Software** no Centro Universitário de Goiás (2023 - 2026).
 * <img src="https://api.iconify.design/lucide:code-xml.svg?color=%#1dd9b8" width="18" align="center"> Atuo como **Desenvolvedor Fullstack**, com foco na construção de APIs REST robustas e integrações de sistemas.
 * <img src="https://api.iconify.design/lucide:settings.svg?color=%#1dd9b8" width="18" align="center"> Valorizo **Código Limpo, Princípios SOLID, POO** e a arquitetura de **Microsserviços**.
 * <img src="https://api.iconify.design/lucide:bot.svg?color=%#1dd9b8" width="18" align="center"> Explorando o universo da Inteligência Artificial aplicada, incluindo ferramentas como Spring AI e LangChain.
