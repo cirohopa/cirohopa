@@ -1,11 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="100%" height="100%">
   <defs>
-    <!-- Estilos e Animações CSS puros para compatibilidade com GitHub Camo -->
+    <!-- Importação da fonte Glacial Indifference e Inter -->
     <style>
+      @import url('https://fonts.cdnfonts.com/css/glacial-indifference');
       @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&amp;display=swap');
       
       .bg { fill: #0d1117; }
-      .text-title { font-family: 'Inter', system-ui, sans-serif; font-weight: 900; font-size: 52px; fill: #1dd9b8; letter-spacing: -1px; }
+      
+      /* Aplicação da Glacial Indifference no título */
+      .text-title { 
+        font-family: 'Glacial Indifference', 'Inter', system-ui, sans-serif; 
+        font-weight: 700; 
+        font-size: 56px; 
+        fill: #1dd9b8; 
+        letter-spacing: 3px; 
+      }
+      
       .text-subtitle { font-family: 'Inter', system-ui, sans-serif; font-weight: 700; font-size: 20px; fill: #e6edf3; letter-spacing: 1px; }
       .text-tech { font-family: 'Inter', system-ui, sans-serif; font-weight: 400; font-size: 15px; fill: #8b949e; letter-spacing: 2px; }
       .text-tagline { font-family: 'Inter', system-ui, sans-serif; font-weight: 300; font-style: italic; font-size: 16px; fill: #1dd9b8; opacity: 0.85; }
@@ -44,7 +54,7 @@
       }
     </style>
 
-    <!-- Gradiente de Brilho de Fundo ajustado para a nova área da constelação -->
+    <!-- Gradiente de Brilho de Fundo -->
     <radialGradient id="glow-left" cx="0%" cy="50%" r="50%">
       <stop offset="0%" stop-color="#1dd9b8" stop-opacity="0.22"/>
       <stop offset="100%" stop-color="#0d1117" stop-opacity="0"/>
@@ -60,9 +70,8 @@
   <rect width="1200" height="320" fill="url(#glow-left)" />
   <rect width="1200" height="320" fill="url(#glow-right)" />
 
-  <!-- LADO ESQUERDO: Constelação Expandida e Parcialmente Cortada (Bleed Effect) -->
+  <!-- LADO ESQUERDO: Constelação Expandida com Efeito Bleed -->
   <g id="constellation" transform="translate(-65, -45) scale(1.45)">
-    <!-- Linhas de Conexão (com vetor estendido para fora da área visível X < 0) -->
     <line x1="-30" y1="70" x2="40" y2="60" stroke="#1dd9b8" class="line-anim" />
     <line x1="-25" y1="170" x2="70" y2="240" stroke="#1dd9b8" class="line-anim" />
     <line x1="-25" y1="170" x2="40" y2="60" stroke="#1dd9b8" class="line-anim" />
@@ -76,7 +85,6 @@
     <line x1="70" y1="240" x2="120" y2="290" stroke="#1dd9b8" class="line-anim" />
     <line x1="230" y1="210" x2="210" y2="280" stroke="#1dd9b8" class="line-anim" />
 
-    <!-- Pontos / Nós da Rede (incluindo nós com coordenadas negativas para simular corte) -->
     <circle cx="-30" cy="70" r="4.5" class="node-3" />
     <circle cx="-25" cy="170" r="5" class="node-1" />
     <circle cx="40" cy="60" r="4" class="node-1" />
@@ -105,6 +113,6 @@
     <text x="600" y="125" class="text-title">Ciro Henrique</text>
     <text x="600" y="170" class="text-subtitle">ENGENHEIRO DE SOFTWARE | DESENVOLVEDOR FULLSTACK</text>
     <text x="600" y="210" class="text-tech">JAVA • SPRING BOOT • AZURE • POSTGRESQL • PYTHON</text>
-    <text x="600" y="255" class="text-tagline">"Transformando ideias em soluções tecnológicas"</text>
+    <text x="600" y="255" class="text-tagline">Transformando ideias em soluções tecnológicas</text>
   </g>
 </svg>
