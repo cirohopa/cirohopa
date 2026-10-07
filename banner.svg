@@ -1,36 +1,110 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="260">
-  <style>
-    .name { font: bold 46px 'Segoe UI', Arial, sans-serif; fill: #008080; text-anchor: middle; }
-    .subtitle { font: bold 14px 'Segoe UI', Arial, sans-serif; fill: #ffffff; text-anchor: middle; letter-spacing: 2px; }
-    .quote { font: bold 16px 'Segoe UI', Arial, sans-serif; fill: #008080; text-anchor: middle; }
-    
-    /* Animação de digitação segura para o GitHub (CSS Puro) */
-    .cover {
-      fill: #0a0a0a;
-      animation: typing 6s steps(60, end) infinite;
-    }
-    
-    @keyframes typing {
-      0%, 15% { transform: translateX(0); }
-      45%, 75% { transform: translateX(720px); }
-      85%, 100% { transform: translateX(0); }
-    }
-  </style>
-  
-  <rect width="100%" height="100%" fill="#0a0a0a" />
-  
-  <rect x="40" y="40" width="720" height="2" fill="#008080" />
-  <rect x="40" y="170" width="720" height="2" fill="#008080" />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="100%" height="100%">
+  <defs>
+    <!-- Estilos e Animações CSS puros para compatibilidade com GitHub Camo -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&amp;display=swap');
+      
+      .bg { fill: #0d1117; }
+      .text-title { font-family: 'Inter', system-ui, sans-serif; font-weight: 900; font-size: 52px; fill: #1dd9b8; letter-spacing: -1px; }
+      .text-subtitle { font-family: 'Inter', system-ui, sans-serif; font-weight: 700; font-size: 20px; fill: #e6edf3; letter-spacing: 1px; }
+      .text-tech { font-family: 'Inter', system-ui, sans-serif; font-weight: 400; font-size: 15px; fill: #8b949e; letter-spacing: 2px; }
+      .text-tagline { font-family: 'Inter', system-ui, sans-serif; font-weight: 300; font-style: italic; font-size: 16px; fill: #1dd9b8; opacity: 0.85; }
 
-  <text x="400" y="105" class="name">Ciro Henrique Oliveira</text>
+      /* Animação da Constelação (Esquerda) */
+      @keyframes pulseNode {
+        0%, 100% { r: 3.5px; opacity: 0.3; fill: #1dd9b8; }
+        50% { r: 6px; opacity: 0.9; fill: #54f0d1; }
+      }
+      @keyframes pulseLine {
+        0%, 100% { opacity: 0.15; stroke: #1dd9b8; }
+        50% { opacity: 0.5; stroke: #54f0d1; }
+      }
 
-  <!-- Subtítulo -->
-  <text x="400" y="145" class="subtitle">DESENVOLVEDOR FULLSTACK | ENGENHEIRO DE SOFTWARE EM FORMAÇÃO</text>
-  
-  <!-- Retângulo simulando a digitação cobrindo e revelando o texto -->
-  <rect x="90" y="125" width="720" height="30" class="cover" />
+      .node-1 { animation: pulseNode 3s infinite ease-in-out; }
+      .node-2 { animation: pulseNode 4s infinite ease-in-out 1s; }
+      .node-3 { animation: pulseNode 3.5s infinite ease-in-out 0.5s; }
+      .line-anim { animation: pulseLine 4s infinite ease-in-out; }
 
-  <text x="400" y="215" class="quote">Transformando ideias em soluções tecnológicas</text>
+      /* Animação Topográfica (Direita) */
+      @keyframes topoWave {
+        0%, 100% { opacity: 0.25; stroke-dashoffset: 0; stroke: #1dd9b8; }
+        50% { opacity: 0.75; stroke-dashoffset: 40; stroke: #54f0d1; }
+      }
+
+      .topo-path {
+        fill: none;
+        stroke-width: 1.8;
+        stroke-dasharray: 8 4;
+        animation: topoWave 6s infinite ease-in-out;
+      }
+      .topo-path-solid {
+        fill: none;
+        stroke-width: 1.5;
+        animation: topoWave 8s infinite ease-in-out 1s;
+      }
+    </style>
+
+    <!-- Gradiente de Brilho de Fundo ajustado para a nova área da constelação -->
+    <radialGradient id="glow-left" cx="0%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1dd9b8" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#0d1117" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow-right" cx="90%" cy="50%" r="40%">
+      <stop offset="0%" stop-color="#1dd9b8" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#0d1117" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Fundo Principal -->
+  <rect width="1200" height="320" class="bg" />
+  <rect width="1200" height="320" fill="url(#glow-left)" />
+  <rect width="1200" height="320" fill="url(#glow-right)" />
+
+  <!-- LADO ESQUERDO: Constelação Expandida e Parcialmente Cortada (Bleed Effect) -->
+  <g id="constellation" transform="translate(-65, -45) scale(1.45)">
+    <!-- Linhas de Conexão (com vetor estendido para fora da área visível X < 0) -->
+    <line x1="-30" y1="70" x2="40" y2="60" stroke="#1dd9b8" class="line-anim" />
+    <line x1="-25" y1="170" x2="70" y2="240" stroke="#1dd9b8" class="line-anim" />
+    <line x1="-25" y1="170" x2="40" y2="60" stroke="#1dd9b8" class="line-anim" />
+    <line x1="40" y1="60" x2="110" y2="120" stroke="#1dd9b8" class="line-anim" />
+    <line x1="110" y1="120" x2="190" y2="80" stroke="#1dd9b8" class="line-anim" />
+    <line x1="110" y1="120" x2="140" y2="200" stroke="#1dd9b8" class="line-anim" />
+    <line x1="140" y1="200" x2="70" y2="240" stroke="#1dd9b8" class="line-anim" />
+    <line x1="140" y1="200" x2="230" y2="210" stroke="#1dd9b8" class="line-anim" />
+    <line x1="190" y1="80" x2="260" y2="140" stroke="#1dd9b8" class="line-anim" />
+    <line x1="230" y1="210" x2="260" y2="140" stroke="#1dd9b8" class="line-anim" />
+    <line x1="70" y1="240" x2="120" y2="290" stroke="#1dd9b8" class="line-anim" />
+    <line x1="230" y1="210" x2="210" y2="280" stroke="#1dd9b8" class="line-anim" />
+
+    <!-- Pontos / Nós da Rede (incluindo nós com coordenadas negativas para simular corte) -->
+    <circle cx="-30" cy="70" r="4.5" class="node-3" />
+    <circle cx="-25" cy="170" r="5" class="node-1" />
+    <circle cx="40" cy="60" r="4" class="node-1" />
+    <circle cx="110" cy="120" r="5" class="node-2" />
+    <circle cx="190" cy="80" r="4" class="node-3" />
+    <circle cx="140" cy="200" r="5" class="node-1" />
+    <circle cx="70" cy="240" r="4" class="node-2" />
+    <circle cx="230" cy="210" r="4.5" class="node-3" />
+    <circle cx="260" cy="140" r="4" class="node-1" />
+    <circle cx="120" cy="290" r="3.5" class="node-3" />
+    <circle cx="210" cy="280" r="4" class="node-2" />
+  </g>
+
+  <!-- LADO DIREITO: Design Topográfico Pulsante -->
+  <g id="topography" transform="translate(100, 0)">
+    <path d="M 800,0 C 860,90 780,150 890,230 C 950,270 1020,290 1100,320" stroke="#1dd9b8" class="topo-path-solid" />
+    <path d="M 830,0 C 890,80 820,140 920,210 C 970,250 1040,280 1100,300" stroke="#1dd9b8" class="topo-path" />
+    <path d="M 870,0 C 930,70 860,130 950,190 C 1000,230 1060,260 1100,280" stroke="#1dd9b8" class="topo-path-solid" />
+    <path d="M 910,0 C 960,60 900,120 980,170 C 1020,200 1070,230 1100,250" stroke="#1dd9b8" class="topo-path" />
+    <path d="M 950,0 C 990,50 940,100 1010,150 C 1050,180 1080,210 1100,220" stroke="#1dd9b8" class="topo-path-solid" />
+    <path d="M 990,0 C 1020,40 980,80 1040,120 C 1070,140 1090,170 1100,180" stroke="#1dd9b8" class="topo-path" />
+  </g>
+
+  <!-- TEXTO CENTRAL -->
+  <g text-anchor="middle">
+    <text x="600" y="125" class="text-title">Ciro Henrique</text>
+    <text x="600" y="170" class="text-subtitle">ENGENHEIRO DE SOFTWARE | DESENVOLVEDOR FULLSTACK</text>
+    <text x="600" y="210" class="text-tech">JAVA • SPRING BOOT • AZURE • POSTGRESQL • PYTHON</text>
+    <text x="600" y="255" class="text-tagline">"Transformando ideias em soluções tecnológicas"</text>
+  </g>
 </svg>
-
